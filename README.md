@@ -15,9 +15,22 @@ cd simple_pod
 
 ## Looping Pod
 
-To deploy the simple test pod to your node:
+To deploy the looping test pod to your node:
+
 
 ```
 cd looping_pod
 ./create_pod.sh --node <nodeId> --apply
 ```
+This will create a yaml file named after the node and with a random element, e.g. test-pod-018a2858a6d3eebee3dfd07000000000-26342.yaml   
+
+The pod will be called test-pod-018a2858a6d3eebee3dfd07000000000-26342
+
+To see the running pods..
+```
+kubectl get pods
+```
+
+To see the logs from the pod..
+```
+kubectl logs test_test-pod-<node>-<rand>
