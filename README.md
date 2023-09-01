@@ -12,3 +12,12 @@ To deploy the simple test pod to your node:
 cd simple_pod
 ./create_pod.sh --node <nodeId> --apply
 ```
+
+## Looping Pod
+
+To deploy the simple test pod to your node:
+
+```
+cd looping_pod
+./create_pod.sh --node <nodeId> --apply
+```
