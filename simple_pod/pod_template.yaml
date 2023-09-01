@@ -11,4 +11,4 @@ spec:
   - name: client
     image: alpine:3.13
     command: ["/bin/sh"]
-    args: ["-c","echo 'hello'; sleep 30"]
+    args: ["-c","echo 'hello'; sleep 600"]
